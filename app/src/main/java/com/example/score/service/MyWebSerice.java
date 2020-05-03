@@ -21,7 +21,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 
 public interface MyWebSerice {
 
-    String BASE_URL="http://192.168.0.18:8080";
+    String BASE_URL="";
 
     /*String FEED = "api/reservations";*/
     Gson gson = new GsonBuilder()

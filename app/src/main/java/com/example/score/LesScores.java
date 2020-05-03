@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.util.Log;
 import android.view.View;
 import android.widget.Adapter;
 import android.widget.ArrayAdapter;
@@ -32,6 +33,7 @@ public class LesScores extends AppCompatActivity {
         if (callingIntent != null) {
             result = callingIntent.getStringArrayListExtra("score");
              myListCompleteData = getIntent().getParcelableArrayListExtra("my_key");
+             Log.i("ISSSSSSSSSSSSSSSSSSSSSSSSSS",myListCompleteData.toString());
             ArrayList<String> Nom_Prenom = new ArrayList<>();
         }
 
