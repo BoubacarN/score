@@ -87,6 +87,7 @@ public class Destination extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Nouveau score enrégistré", Toast.LENGTH_LONG).show();
                     ;
                 }
+
             }
 
             @Override
@@ -94,5 +95,9 @@ public class Destination extends AppCompatActivity {
                 Log.i("Error",t.getLocalizedMessage().toString());
             }
         });
+
+
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

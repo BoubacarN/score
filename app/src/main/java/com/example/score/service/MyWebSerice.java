@@ -12,8 +12,10 @@ import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.Body;
+import retrofit2.http.DELETE;
 import retrofit2.http.Field;
 import retrofit2.http.GET;
+import retrofit2.http.PATCH;
 import retrofit2.http.POST;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 
@@ -40,4 +42,13 @@ public interface MyWebSerice {
     @GET("/api/confines/liveScore/score")
     Call<List<Joueurs>> getAllScore();
 
+    @GET("/api/confines/liveScore/scorebyId")
+    Call<List<Joueurs>> getOneScore(@Field("id") String id);
+
+    @DELETE("/api/confines/liveScore/delete")
+    Call<List<Joueurs>> deleteScore(@Field("id") String id);
+
+
+    @PATCH("/api/confines/score/update")
+    Call<List<Joueurs>> UpdateScore(@Body  Joueurs joueur);
 }
