@@ -7,23 +7,20 @@
     tools:context=".LesScores">
 
 
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rvItems"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--        tools:layout_editor_absoluteX="0dp"-->
+<!--        tools:layout_editor_absoluteY="0dp"></androidx.recyclerview.widget.RecyclerView>-->
+
+
     <ListView
         android:id="@android:id/list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-     ></ListView>
+        android:layout_height="match_parent"/>
 
 
-
-    <Button
-        android:id="@+id/retourMenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Retour au menu"
-        android:onClick="retourAuMenu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

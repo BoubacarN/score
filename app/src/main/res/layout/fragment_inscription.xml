@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/colorBackgroundFloating"
     android:padding="10dp"
-    android:background="@android:color/white"
     tools:context=".FragmentInscription">
 
 
@@ -58,23 +58,22 @@
         android:inputType="textMultiLine" />
 
     <Button
-        android:id="@+id/button"
-        android:onClick="HandleAjout"
+        android:id="@+id/nouveu_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ajouter"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="400dp"
-        android:layout_marginLeft="20dp"/>
+        android:onClick="HandleAjout"
+        android:text="Ajouter" />
 
     <Button
         android:id="@+id/Clear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="HandleRetour"
-        android:layout_marginTop="400dp"
         android:layout_marginLeft="150dp"
+        android:layout_marginTop="400dp"
+        android:onClick="HandleRetour"
         android:text="Retour" />
-
 
 
 </FrameLayout>

@@ -52,6 +52,7 @@
         android:id="@+id/voirUnResultat"
         android:layout_width="201dp"
         android:layout_height="37dp"
+        android:onClick="voirUnResultat"
         android:layout_alignParentTop="true"
         android:layout_marginStart="103dp"
         android:layout_marginLeft="103dp"
@@ -62,5 +63,12 @@
         android:text="Voir un résultat" />
 
 
+<FrameLayout
+    android:id="@+id/fragment_containerInscription"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
 
+
+</FrameLayout>
 </RelativeLayout>

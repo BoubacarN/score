@@ -14,9 +14,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".LesScores"></activity>
+        <activity android:name=".VoirScoreParScore"></activity>
+        <activity
+            android:name=".DetailPortableScore"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DetailActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LesScores"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".Destination" />
-        <activity android:name=".NewScoreUser"></activity>
+        <activity android:name=".NewScoreUser" />
 
         <meta-data
             android:name="com.google.android.actions"
